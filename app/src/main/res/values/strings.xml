@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <string name="first_name">First Name: </string>
+
+    <string name="last_name">Last Name: </string>
+
+    <string name="button_name">Next</string>
+
+    <string name="second_page">By the way, you did an excellent job clicking that button. Are you a professional button-clicker?</string>
+</resources>
