@@ -1,9 +1,25 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
+    <string name="app_name">Ride Share</string>
 
-    <string name="first_name">First Name: </string>
+    <string name="name_prompt">Enter full name</string>
 
-    <string name="last_name">Last Name: </string>
+    <string name="car">Car</string>
+
+    <string name="no_car">No Car</string>
+
+    <string name="car_seats">Number of Seats Available</string>
+
+    <string name="radius">Pickup Radius</string>
+
+    <string name="class_start">First Class Start Time</string>
+
+    <string name="class_end">Last Class End Time</string>
+
+    <string name="email">Email</string>
+
+    <string name="password">Password</string>
+
+    <string name="re_password">Re-Enter Password</string>
 
     <string name="button_name">Next</string>
 
