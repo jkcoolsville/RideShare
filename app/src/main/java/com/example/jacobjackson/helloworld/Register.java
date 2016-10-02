@@ -75,10 +75,10 @@ public class Register extends AppCompatActivity {
                 } else {
                     findViewById(R.id.editText15).setVisibility(View.INVISIBLE);
                     EditText radius = (EditText) findViewById(R.id.editText15);
-                    radius.setText(null);
+                    radius.setText("0");
                     findViewById(R.id.editText14).setVisibility(View.INVISIBLE);
                     EditText seats = (EditText) findViewById(R.id.editText14);
-                    seats.setText(null);
+                    seats.setText("0");
                 }
             }
         });
@@ -152,21 +152,11 @@ public class Register extends AppCompatActivity {
         }
 
         text = (EditText)findViewById(R.id.editText14);
-        if(text.getText().toString()!=null) {
-            value = text.getText().toString();
-        }
-        else {
-            value = "0";
-        }
+        value = text.getText().toString();
         data += "((seats:" + value;
 
         text = (EditText)findViewById(R.id.editText15);
-        if(text.getText().toString()!=null) {
-            value = text.getText().toString();
-        }
-        else {
-            value = "0";
-        }
+        value = text.getText().toString();
         data += "((radius:" + value;
 
         text = (EditText)findViewById(R.id.editText16);

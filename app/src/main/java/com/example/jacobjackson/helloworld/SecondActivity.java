@@ -51,17 +51,21 @@ public class SecondActivity extends AppCompatActivity {
                 InputStream inputstream = response.getEntity().getContent();
                 line = convertStreamToString(inputstream);
                 String[] output = line.split("<br>");
-                /*for(int o = 2; o < output.length; o++){
-                    output[o].split(" ");
-                }*/
-                Button[] matches = new Button[output.length-2];
-                for(int i = 0; i < matches.length; i++){
-                    Button button = (Button)findViewById(BUTTON_IDS[i]);
-                    button.setVisibility(View.VISIBLE);
+                String[] drivers = new String[output.length-2];
+                String[] distances = new String[output.length-2];
+                int drive = 0;
+                for(int o = 2; o < output.length; o++){
+                    drivers[drive] = output[o].split(":")[1].split(" ")[0].replace(".", " ");
+                    distances[drive] = output[o].split(":")[6].substring(0, 4);
+                    drive++;
                 }
-                Toast.makeText(this, line, Toast.LENGTH_SHORT).show();
-                for(String s : output){
-                    Log.w("Output line: ", s);
+
+                Button[] matches = new Button[output.length-2];
+                for(int i = 0; i < output.length-2; i++) {
+                    Button button = (Button) findViewById(BUTTON_IDS[i]);
+                    button.setVisibility(View.VISIBLE);
+                    button.setText(drivers[i] + ": " + distances[i] + " miles away");
+                    Log.w("Name2: ", drivers[i]);
                 }
 
             } else {
@@ -69,13 +73,11 @@ public class SecondActivity extends AppCompatActivity {
             }
         } catch (ClientProtocolException e) {
             Toast.makeText(this, "Caught ClientProtocolException", Toast.LENGTH_SHORT).show();
-            Log.w("Output: ", e.toString());
         } catch (IOException e) {
             Toast.makeText(this, "Caught IOException", Toast.LENGTH_SHORT).show();
-            Log.w("Output: ", e.toString());
         } catch (Exception e) {
             Toast.makeText(this, "Caught Exception" + e.toString(), Toast.LENGTH_SHORT).show();
-            Log.w("Output: ", e.toString());
+            Log.w("Exception: ", e.toString());
         }
     }
 
