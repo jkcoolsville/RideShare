@@ -1,3 +1,4 @@
+##name:bob.smith\car:toyota.tundra\seats:3\radius:5\timegoing:0930\timeleaving:1300\email:name@example.com\password:supersecret
 register:
 	name (string)
 	car (1/0)
