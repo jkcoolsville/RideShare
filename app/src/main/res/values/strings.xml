@@ -21,7 +21,14 @@
 
     <string name="re_password">Re-Enter Password</string>
 
-    <string name="button_name">Next</string>
+    <string name="button_name">Submit</string>
+
+    <string name="login">Login</string>
+
+    <string name="register">Register</string>
+
+    <string name="new_account">Need an account?</string>
+
 
     <string name="second_page">By the way, you did an excellent job clicking that button. Are you a professional button-clicker?</string>
 </resources>
