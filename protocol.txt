@@ -1,4 +1,5 @@
-##name:bob.smith\car:1\seats:3\radius:5\timegoing:0930\timeleaving:1300\email:name@example.com\password:supersecret
+##name:Bruce.Wayne((car:0((seats:0((radius:0((timegoing:0800((timeleaving:0400((lat:30.584805((lon:-96.341892((email:buy@store.com((password:buy
+
 register:
 	name (string)
 	car (1/0)
