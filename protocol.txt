@@ -1,0 +1,32 @@
+register:
+	name (string)
+	car (1/0)
+	seats available (int)
+	radius (int)
+	timegoing (4 digits, 24 hour format time)
+	timeleaving (4 digits, 24 hour format time)
+	email (string)
+	password (string)
+	facebook (string)
+
+edit:
+	car (string)
+	email (string)
+	password (string)
+
+requestride:
+	startpoint (string (address or lat/long))
+	endpoint (string (address or lat/long))
+
+feedback:
+	enjoyment (int -3 to 3
+	condition (int 1 to 4)
+	ability (int 1 to 4)
+
+login:
+	email (string)
+	password (string)
+	facebook (string)
+
+getmatches:
+	directmessage (string id/email)
